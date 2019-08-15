@@ -1,0 +1,26 @@
+#include <iostream>
+
+// Function declaration
+void func(void);
+
+// static storage class assigned to global variable
+static int count =10;
+
+main()
+{
+  while (count --)
+  {
+     func();
+  }
+  return 0;
+}
+
+//Function definition
+void func(void)
+{
+  static int i=5;       //local static variable
+  i++;                  // varibale i plus 1
+  std:: cout << "i is " << i;
+  std:: cout << "and count is " << count << std ::end1;
+}
+

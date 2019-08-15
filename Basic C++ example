@@ -5,8 +5,9 @@
 #include <iostream >
 using namespace std;
 
+// EXAMPLE 1 ###########################
 //extern declares or defines variable
-extern int a , b;
+extern int a , b;                                         //extern points to a variable of another file
 extern int c;
 extern float f;
 
@@ -26,6 +27,7 @@ int main()
   return 0;
 }
 
+// EXAMPLE 2 ###########################
 // function declaration
 int func();
 
@@ -39,3 +41,27 @@ int func()
   return 0;
 }
 
+// EXAMPLE 3 ###########################
+/* transferring variable between files
+   first file = main.cpp
+   second file = support.cpp
+*/
+
+// FIRST FILE
+#include <iostream>
+int count;
+extern void function2();
+
+main()
+{
+  count = 5;
+  write_extern();
+}
+
+// SECOND FILE
+#include <iostream>
+extern int count;
+void write_extern(void)
+{
+  std:: cout<< "Count is" << count << std::endl;
+}

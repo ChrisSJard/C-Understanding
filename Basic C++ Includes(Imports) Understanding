@@ -1,0 +1,19 @@
+/* This code will demonstrate different C++ imports and explain their basic use */
+
+// #include is simialr to python import to allow build in tools of that library
+
+#include <iostream>
+/* used to provide tool for printing on command line using cout
+   used to provide tool for keyboard input using cin
+   used to provide tool for standard error message using cerr
+   used to provide tool for standard error message using clog
+*/
+
+#include <climit>
+/* used to get build in variable max & min to get maximum and minimum values
+*/
+
+#include <iomanip>
+/* used to specify decimal floating point stoppper
+   used to provide spacing in prints 
+*/

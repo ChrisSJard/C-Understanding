@@ -1,0 +1,41 @@
+/* This code demonstrates the basic structure and operation of C++ coding *\
+
+// Variable declared at the top but it has been defined inside the main function
+
+#include <iostream >
+using namespace std;
+
+//extern declares or defines variable
+extern int a , b;
+extern int c;
+extern float f;
+
+int main() 
+{
+  int a,b;
+  int c;
+  float f;
+  
+//Actual iniitialization 
+  a = 1;
+  b =3;
+  c = a+b;
+  cout <<c << endl;
+  f = 70/3;
+  cout <<f << endl;
+  return 0;
+}
+
+// function declaration
+int func();
+
+int main()
+{
+  int i = func();
+}
+//function definition
+int func()
+{
+  return 0;
+}
+

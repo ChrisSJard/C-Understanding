@@ -23,4 +23,3 @@ void func(void)
   std:: cout << "i is " << i;
   std:: cout << "and count is " << count << std ::end1;
 }
-
